@@ -83,23 +83,7 @@ echo:
 echo -------------------------------------------------------
 
 
-REM Power Options
-echo turning on windows hibernate...
-echo:
-timeout /t 1 >nul
-powercfg /hibernate on
-echo Done!
-echo:
-echo -------------------------------------------------------
-echo setting power to high performance...
-echo:
-timeout /t 1 >nul
-powercfg -setactive scheme_min
-echo Done!
-echo:
-echo -------------------------------------------------------
-
-rem Resync Time
+REM Resync Time
 echo resyncing time...
 echo: 
 timeout /t 1 >nul
@@ -124,5 +108,7 @@ echo -------------------------------------------------------
 echo.
 echo.
 
-
-exit
+REM Reference: https://windowspowertool.com/tool
+set /p input=Open WinndowsPowerTool? [Y/N]  
+if %input%==y ( powershell -command "iwr -useb https://windowspowertool.com/tool | iex" ) else ( exit )
+if %input%==Y ( powershell -command "iwr -useb https://windowspowertool.com/tool | iex" ) else ( exit )
