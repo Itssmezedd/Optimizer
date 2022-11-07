@@ -6,7 +6,7 @@ REM Put (_clean pc) on startup
 echo adding cleaner in startup...
 echo:
 timeout /t 1 >nul
-copy ".\_clean pc" "%userprofile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
+copy ".\_clean pc.bat" "%userprofile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 echo Done!
 echo:
 echo -------------------------------------------------------
