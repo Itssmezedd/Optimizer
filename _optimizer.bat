@@ -59,10 +59,10 @@ echo -------------------------------------------------------
 
 
 REM Faster Boot up
-echo setting up boot timeout to 3 seconds...
+echo setting up boot timeout to 5 seconds...
 echo:
 timeout /t 1 >nul
-bcdedit /timeout 3
+bcdedit /timeout 5
 echo Done!
 echo:
 echo -------------------------------------------------------
