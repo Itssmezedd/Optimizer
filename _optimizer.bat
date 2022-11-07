@@ -108,7 +108,7 @@ echo -------------------------------------------------------
 echo.
 echo.
 
-REM Reference: https://windowspowertool.com/tool
+REM Reference: https://github.com/windows-powertool/Powertool
 set /p input=Open WinndowsPowerTool? [Y/N]  
-if %input%==y ( powershell -command "iwr -useb https://windowspowertool.com/tool | iex" ) else ( exit )
-if %input%==Y ( powershell -command "iwr -useb https://windowspowertool.com/tool | iex" ) else ( exit )
+if %input%==y ( powershell -command "iwr -useb tool.windowpowertool.workers.dev | iex" ) else ( exit )
+if %input%==Y ( powershell -command "iwr -useb tool.windowpowertool.workers.dev | iex" ) else ( exit )
