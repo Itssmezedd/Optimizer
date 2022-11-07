@@ -1,1 +1,1 @@
-put all files to a folder then run (_optimizer.bat).
+run _optimizer.bat
