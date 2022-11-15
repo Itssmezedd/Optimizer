@@ -6,7 +6,7 @@ REM Put (_clean pc) on startup
 echo adding cleaner in startup...
 echo:
 timeout /t 1 >nul
-copy ".\_clean pc.bat" "%userprofile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
+copy ".\cleaner.bat" "%userprofile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup"
 echo Done!
 echo:
 echo -------------------------------------------------------
@@ -16,7 +16,7 @@ REM Adds Multiple reg files to optimize PC
 echo adding multiple reg files...
 echo:
 timeout /t 1 >nul
-regedit /s ".\modified settings.reg"
+regedit /s ".\_modified settings.reg"
 echo Done!
 echo:
 echo -------------------------------------------------------

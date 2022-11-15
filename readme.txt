@@ -1,1 +1,1 @@
-run _optimizer.bat
+run optimizer.bat
